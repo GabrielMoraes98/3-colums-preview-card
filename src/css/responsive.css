@@ -1,0 +1,36 @@
+@media (max-width: 900px) {
+  body .container {
+    width: 90%;
+  }
+  body .container .card p {
+    min-height: 205px;
+  }
+}
+@media (max-width: 756px) {
+  body .container {
+    flex-direction: column;
+    padding: 10px 0px;
+    box-shadow: none;
+  }
+  body .container .card {
+    max-width: 80%;
+    height: 400px;
+    justify-content: center;
+    gap: 25px;
+    box-shadow: 25px 0 20px -29px rgba(0, 0, 0, 0.45),
+      -25px 0 20px -29px rgba(0, 0, 0, 0.45);
+  }
+  body .container .card p {
+    min-height: 120px;
+  }
+  body .container .card.sedans {
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 12px;
+  }
+  body .container .card.luxury {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+  }
+}
